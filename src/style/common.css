@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* 输入框默认样式处理 */
+.l-input {
+    font-size: 14px;
+    line-height: 14px;
+    border: 1px solid #d7dce6;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: #333;
+    width: 100%;
+    transition: border .2s ease-in-out, background .2s ease-in-out;
+}
+
+.l-input::-moz-placeholder {
+    color: #666666;
+    opacity: 1
+}
+
+.l-input:-ms-input-placeholder {
+    color: #666666
+}
+
+.l-input::-webkit-input-placeholder {
+    color: #666666
+}
+
+.l-input:focus, .ivu-input:hover {
+    border-color: #3673ff;
+}
+
+.l-input:focus {
+    outline: 0;
+}
+
+.l-input[disabled] {
+    background-color: #f3f3f3;
+    opacity: 1;
+    cursor: not-allowed;
+    color: #ccc;
+    border-color: #e4e5e7
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+input {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+code {
+    background: #000000;
+    width: 100%;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 10px 10px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    box-shadow: 0 1px 8px 1px #d7dce6;
+    text-shadow: 1px 1px 8px #1982bf;
+}
+
+.form-input {
+    border: 1px solid #d7dce6;
+    height: 32px;
+    width: 160px;
+    padding: 8px 10px;
+}
+
+.form-input:focus {
+    border-color: #3673ff;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+:-moz-placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+::-moz-placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+:-ms-input-placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+/* 无圆角样式 */
+.no-border-radius {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+/* 浮动样式 */
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+/* 字体对齐方式 */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* 链接样式控制 */
+
+a {
+    text-decoration: none;
+}
+
+/* 无序列表原点控制 */
+
+li {
+    list-style: none;
+}
+
+/* 手指样式 */
+
+.pointer {
+    cursor: pointer;
+}
+
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color: #d7dce6;
+}
+
+/* 方向图标按钮样式 */
+
+.icon-btn {
+    height: 24px;
+    width: 24px;
+    border: 1px solid #d9d9d9;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.icon-btn .icon {
+    width: 10px;
+    height: 10px;
+    margin: 6px 6px;
+    float: left;
+    text-align: center;
+    color: #666666;
+}
+
+.icon-btn:hover {
+    color: #3673ff;
+    border-color: #3673ff;
+}
+
+.icon-btn:hover .icon {
+    color: #3673ff;
+}
+
+.icon-btn.not-allowed:hover {
+    border-color: #d9d9d9;
+}
+
+.icon-btn.not-allowed:hover .icon {
+    color: #999999 !important;
+}
+
+/* 按钮样式控制 */
+
+.btn {
+    height: 32px;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 4px;
+    border: 1px solid #d7dce6;
+    padding: 8px 12px;
+    cursor: pointer;
+    background: #fff;
+    margin-right: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    min-width: 70px;
+    text-align: center;
+    display: inline-block;
+    color: #666666;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-small {
+    height: 26px;
+    min-width: 60px;
+    line-height: 12px;
+    padding: 6px 4px;
+}
+
+.btn-cancel:hover {
+    background: #eeeeee;
+    border-color: #e9e9e9;
+}
+
+.btn-primary {
+    background: #3673ff;
+    border-color: #3673ff;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    opacity: .85;
+}
+
+/* 禁止选择文字 */
+
+.un-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* 禁止手势 */
+
+.not-allowed {
+    cursor: not-allowed !important;
+}
+
+/* 删除按钮图标样式 */
+.icons-delete:hover {
+    color: #FF0000;
+}
+
+/* 滚动条样式修改 */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d7dce6;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #747474;
+}
+
+::-webkit-scrollbar-corner {
+    background: #f6f6f6;
+}
